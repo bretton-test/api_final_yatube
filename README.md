@@ -27,7 +27,6 @@ Cоздать и активировать виртуальное окружен�
 python -m venv venv
 ```
 ```bash
-Linux: source venv/bin/activate
 Windows: source venv/Scripts/activate
 ```
 
@@ -83,10 +82,18 @@ python manage.py runserver
 ```
 
 Получение токена для доступа к API (Для зарегистрированных пользователей):
+Post ("username": "string","password": "string")
 ```
 "/api/v1/auth/jwt/create/"
 ```
-
+Обновление JWT-токена. Post ("refresh": "string" required)
+```
+"/api/v1/jwt/refresh/"
+```
+Проверка JWT-токена. Post ("token": "string")
+```
+"/api/v1/jwt/verify/"
+```
 ---
 ## 4. Примеры запросов <a id=4></a>
 
