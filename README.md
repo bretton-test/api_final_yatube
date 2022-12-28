@@ -27,7 +27,6 @@ Cоздать и активировать виртуальное окружен�
 python -m venv venv
 ```
 ```bash
-Linux: source venv/bin/activate
 Windows: source venv/Scripts/activate
 ```
 
